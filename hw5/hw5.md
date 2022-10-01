@@ -148,9 +148,11 @@ Process finished with exit code 0
 #### 题目：
 
 函数 $f(x)$ 在区间 $[a, b]$ 上的定积分可用区间内选取的 $n+1$ 个点 $x_i(i=0,1, \ldots, n)$ (称为积分节点) 上的函数值的加权和近似计算:
+
 $$
 \int_a^b f(x) d x \approx \sum_{i=0}^n w_i f\left(x_i\right)
 $$
+
 其中 $w_i$ 是函数值 $f\left(x_i\right)$ 的权重, 称为积分系数。常用的数值计算公式的区别体现在积分节点和积分系数上。
 
 | 公式名称                                                     | 积分节点和积分系数                                           |
