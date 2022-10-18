@@ -109,14 +109,19 @@ $$
 演化使用具有四阶精度的龙格-库塔算法实现。
 
 令初值问题表述如下：
+
 $$
 y^{\prime}=f(t, y), \quad y\left(t_0\right)=y_0.
 $$
+
 则，对于该问题的RK4由如下方程给出:
+
 $$
 y_{n+1}=y_n+\frac{h}{6}\left(k_1+2 k_2+2 k_3+k_4\right),
 $$
+
 其中：
+
 $$
 \begin{aligned}
 &k_1=f\left(t_n, y_n\right), \\
