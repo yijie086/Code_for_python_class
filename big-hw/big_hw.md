@@ -23,26 +23,37 @@ Oscillon通常存在于允许具有有吸引力的自相互作用的势能的模
 ### Oscillon的数学背景
 
 我们将关注来自最简单模型的Oscillon，该模型只有一个实标量场$\varphi$在反射$φ → -φ$下不变。 正如我们将看到的，这个简单的模型已经产生了丰富的时间演化和准平稳的复杂结构。 从现代流行的有效场论观点来看，这种$d + 1$ 维的理论是由作用量给出的：
+
 $$
 S_{\mathrm{t}}=\int \mathrm{d}^{d+1} \tilde{x}\left(-\frac{1}{2} \partial_{\tilde{\mu}} \varphi \partial^{\tilde{\mu}} \varphi-\frac{1}{2} m^2 \varphi^2+\lambda \varphi^4-g_0 \varphi^6+g_1 \varphi^8+g_2\left(\partial_{\tilde{\mu}} \varphi \partial^{\tilde{\mu}} \varphi\right)^2+\cdots\right).
 $$
+
 其中$m$是标量的质量，耦合常数的质量维度为$[λ] = 3−d$，$[g_0] = 4−2d$，$[g_1] = 5−3d$，$ [g_2] = -d−1$ 等等。（可以添加像$∂^4φ^2$和$∂^2φ^4$这样的项，但是这些项可以通过重新定义字段来删除。）为简单起见，我们将在本文中仅考虑$d = 2$的情况，并截断到$φ^6$的数量级，这样作用量重新写为：
+
 $$
 S=\frac{m}{2 \lambda} \int \mathrm{d}^3 x \mathcal{L} \equiv \frac{m}{2 \lambda} \int \mathrm{d}^3 x\left(-\frac{1}{2} \partial_\mu \phi \partial^\mu \phi-\frac{1}{2} \phi^2+\frac{1}{2} \phi^4-\frac{1}{2} g \phi^6\right),
 $$
+
 其中：
+
 $$
 x^\mu=m \tilde{x}^\mu, \quad \phi=\frac{(2 \lambda)^{1 / 2} \varphi}{m}, \quad g=\frac{m^2 g_0}{2 \lambda^2}.
 $$
+
 由此，能量密度写为：
+
 $$
 \mathcal{H}=\frac{1}{2} \dot{\phi}^2+\frac{1}{2}(\nabla \phi)^2+\frac{1}{2} \phi^2-\frac{1}{2} \phi^4+\frac{1}{2} g \phi^6.
 $$
+
 而我们将要用`python`模拟的方程是：
+
 $$
 \ddot{\phi}-\nabla^2 \phi+\phi-2 \phi^3+3 g \phi^5=0.
 $$
+
 初始条件设定为：
+
 $$
 \phi=A e^{-\frac{\left(r^2-a\right)^2}{\sigma^2}}, \quad \dot{\phi}=0.
 $$
@@ -88,6 +99,7 @@ cond(no)->op4
 #### 远场边界条件
 
 远场使用吸收性边界条件，通过下述方程实现：
+
 $$
 \left(\partial_t \partial_r+\partial_t^2+\frac{1}{2}+\frac{d-1}{2 r} \partial_t\right) \phi=0.
 $$
