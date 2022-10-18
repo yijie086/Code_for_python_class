@@ -28,7 +28,7 @@ $$
 S_{\mathrm{t}}=\int \mathrm{d}^{d+1} \tilde{x}\left(-\frac{1}{2} \partial_{\tilde{\mu}} \varphi \partial^{\tilde{\mu}} \varphi-\frac{1}{2} m^2 \varphi^2+\lambda \varphi^4-g_0 \varphi^6+g_1 \varphi^8+g_2\left(\partial_{\tilde{\mu}} \varphi \partial^{\tilde{\mu}} \varphi\right)^2+\cdots\right).
 $$
 
-其中$m$是标量的质量，耦合常数的质量维度为$[λ] = 3−d$，$[g_0] = 4−2d$，$[g_1] = 5−3d$，$ [g_2] = -d−1$ 等等。（可以添加像$∂^4φ^2$和$∂^2φ^4$这样的项，但是这些项可以通过重新定义字段来删除。）为简单起见，我们将在本文中仅考虑$d = 2$的情况，并截断到$φ^6$的数量级，这样作用量重新写为：
+其中$m$是标量的质量，耦合常数的质量维度为 $[λ] = 3−d$，$[g_0] = 4−2d$，$[g_1] = 5−3d$，$ [g_2] = -d−1$ 等等。（可以添加像$∂^4φ^2$和$∂^2φ^4$这样的项，但是这些项可以通过重新定义字段来删除。）为简单起见，我们将在本文中仅考虑$d = 2$的情况，并截断到$φ^6$的数量级，这样作用量重新写为：
 
 $$
 S=\frac{m}{2 \lambda} \int \mathrm{d}^3 x \mathcal{L} \equiv \frac{m}{2 \lambda} \int \mathrm{d}^3 x\left(-\frac{1}{2} \partial_\mu \phi \partial^\mu \phi-\frac{1}{2} \phi^2+\frac{1}{2} \phi^4-\frac{1}{2} g \phi^6\right),
@@ -211,9 +211,11 @@ $$
 ### 收敛性测试
 
 程序收敛性可以用如下公式表示：
+
 $$
 2^k:=\Omega \approx \frac{E_1-E_2}{E_2-E_3} \approx \frac{E_2-E_3}{E_3-E_4}.
 $$
+
 其中，$k$表示精度阶数，$E_i$的下标$i$表示在参数`zoombeta=i`的情况下的总能量值。如下图所示，可见$\Omega\approx 16$。故该程序达到四阶精度
 
 <img src="images/image-20221018122432887.png" alt="image-20221018122432887" style="zoom:20%;" />
@@ -276,9 +278,11 @@ Time = 3.5 Beacon = 0.000175 Energy =  114.98289824416085
 #### Fourier频谱分析：`phi.dat`
 
 关于不同平台的场的Fourier频谱，则可以使用Fourier频谱对其进行展开分析：
+
 $$
 \mathcal{P}=\left|\tilde{\phi}\left(\omega, \mathbf{x}_0\right)\right|^2, \quad \text { where } \tilde{\phi}\left(\omega, \mathbf{x}_0\right)=\int_{t_a}^{t_b} \mathrm{~d} t e^{-i \omega t} \phi\left(t, \mathbf{x}_0\right).
 $$
+
 得到的结果如下图所示:
 
 <img src="images/image-20221018135153026.png" alt="image-20221018135153026" style="zoom:40%;" />
