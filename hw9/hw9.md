@@ -379,6 +379,6 @@ This is a python code for homework9-2: Sorting time
 Process finished with exit code 0
 ```
 
-<img src="/Users/wangyijie/Library/Mobile Documents/com~apple~CloudDocs/Study_in_USTC/杂事/python科学计算/hw9/hw9_2.jpg" alt="hw9_2" style="zoom:72%;" />
+<img src="hw9_2.jpg" alt="hw9_2" style="zoom:72%;" />
 
 运行得到图片如上，可见代码运行正确。
