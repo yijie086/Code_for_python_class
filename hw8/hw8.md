@@ -1,8 +1,8 @@
-# Homework 1
+# Homework 8
 
 ## Exercise 1
 
-### 3-sum问题的时间复杂度为$O(n^2\log n)$的算法
+### 3-sum问题的时间复杂度为 $O(n^2\log n)$ 的算法
 
 #### 题目：
 
